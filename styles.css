@@ -245,97 +245,96 @@ body {
 
 @media (max-width: 560px) {
   .app-header {
-    height: 104px;
-    justify-content: flex-end;
-    padding-right: 12px;
+    height: 21vw;
+    justify-content: center;
   }
 
   .university-logo {
-    transform: scale(0.62);
-    transform-origin: right center;
+    transform: scale(calc(100vw / 738));
+    transform-origin: center center;
   }
 
   .menu-button {
-    top: 39px;
-    left: 18px;
-    transform: scale(0.72);
+    top: 8vw;
+    left: 4vw;
+    transform: scale(calc(100vw / 738));
     transform-origin: top left;
   }
 
   .student-area {
-    min-height: calc(100vh - 104px);
-    padding: 38px 13px 46px;
+    min-height: calc(100vh - 21vw);
+    padding: 9.8vw 3.65vw 10.5vw;
     background: linear-gradient(
       to bottom,
-      var(--white) 0 130px,
-      var(--page-background) 130px 100%
+      var(--white) 0 25.8vw,
+      var(--page-background) 25.8vw 100%
     );
   }
 
   .student-card {
-    border-radius: 22px;
+    border-radius: 4.6vw;
   }
 
   .card-details {
-    grid-template-columns: 58px minmax(0, 1fr);
-    min-height: 126px;
-    padding: 19px 38px 13px 10px;
+    grid-template-columns: 13.55vw minmax(0, 1fr);
+    min-height: 26.7vw;
+    padding: 3.8vw 9.62vw 2.7vw 2.7vw;
   }
 
   .profile-avatar {
-    width: 50px;
-    height: 50px;
+    width: 11.65vw;
+    height: 11.65vw;
   }
 
   .settings-icon {
-    top: 10px;
-    width: 30px;
-    height: 30px;
-    right: 7px;
+    top: 2.3vw;
+    right: 2vw;
+    width: 7.05vw;
+    height: 7.05vw;
   }
 
   .student-information h1 {
-    font-size: clamp(15px, 5vw, 21px);
-    margin-bottom: 5px;
+    margin-bottom: 1.35vw;
+    font-size: 4.2vw;
   }
 
   .student-information p {
-    font-size: clamp(12px, 3.75vw, 16px);
+    font-size: 3.38vw;
   }
 
   .barcode-area {
-    height: 62px;
+    height: 13.28vw;
   }
 
   .barcode {
-    width: 63%;
-    height: 43px;
+    width: 59.5%;
+    height: 9.35vw;
   }
 
   .courses {
-    margin-top: 18px;
+    margin-top: 3.93vw;
   }
 
   .courses h2 {
-    margin-bottom: 20px;
-    font-size: 23px;
+    margin-bottom: 5.28vw;
+    font-size: 4.61vw;
   }
 
   .course-list {
-    gap: 11px;
+    gap: 2.17vw;
   }
 
   .course {
-    min-height: 69px;
-    padding: 16px 15px 12px;
+    min-height: 14.1vw;
+    padding: 3.39vw 3.79vw 2.44vw;
   }
 
   .course h3 {
-    margin-bottom: 4px;
-    font-size: clamp(14px, 3.8vw, 17px);
+    margin-bottom: 0.95vw;
+    font-size: 3.39vw;
   }
 
   .course p {
-    font-size: clamp(12px, 3.25vw, 14px);
+    font-size: 2.71vw;
   }
 }
