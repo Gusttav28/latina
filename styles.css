@@ -1,0 +1,313 @@
+:root {
+  --header-background: #d1d1d1;
+  --page-background: #4a4a4c;
+  --course-background: #2f2f30;
+  --card-green: #8bc540;
+  --white: #ffffff;
+  --card-text: #505052;
+  --muted-text: #cdcdcd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--page-background);
+}
+
+.portal {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--page-background);
+}
+
+.app-header {
+  position: relative;
+  height: clamp(126px, 21vw, 156px);
+  background: var(--header-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button {
+  position: absolute;
+  top: 59px;
+  left: clamp(22px, 4vw, 30px);
+  width: 37px;
+  height: 39px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.menu-button span {
+  position: absolute;
+  left: 0;
+  width: 36px;
+  height: 5px;
+  border-radius: 6px;
+  background: #555558;
+}
+
+.menu-button span:first-child {
+  top: 0;
+}
+
+.menu-button span:last-child {
+  top: 28px;
+  width: 20px;
+}
+
+.university-logo {
+  height: 73px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--white);
+}
+
+.globe {
+  width: 71px;
+  height: 71px;
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 3;
+}
+
+.globe path {
+  fill: var(--white);
+  stroke-width: 1.2;
+}
+
+.logo-rule {
+  display: block;
+  width: 7px;
+  height: 58px;
+  background:
+    linear-gradient(to bottom, var(--white) 0 21px, transparent 21px 27px, var(--white) 27px 47px, transparent 47px 53px, var(--white) 53px 58px);
+}
+
+.wordmark {
+  color: var(--white);
+  font-size: clamp(21px, 3.35vw, 26px);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: -0.4px;
+}
+
+.wordmark span {
+  display: block;
+  white-space: nowrap;
+}
+
+.student-area {
+  min-height: calc(100vh - clamp(126px, 21vw, 156px));
+  padding: clamp(60px, 9.8vw, 72px) clamp(20px, 3.65vw, 27px) 78px;
+  background: linear-gradient(
+    to bottom,
+    var(--white) 0 clamp(168px, 25.8vw, 191px),
+    var(--page-background) clamp(168px, 25.8vw, 191px) 100%
+  );
+}
+
+.student-card {
+  overflow: hidden;
+  max-width: 685px;
+  margin: 0 auto;
+  border-radius: 34px;
+  background: var(--white);
+  color: var(--card-text);
+}
+
+.card-details {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  align-items: center;
+  min-height: 197px;
+  padding: 28px 71px 20px 20px;
+  background: var(--card-green);
+}
+
+.profile-avatar {
+  align-self: center;
+  width: 86px;
+  height: 86px;
+}
+
+.avatar-background {
+  fill: #e7e8e9;
+}
+
+.avatar-head,
+.avatar-body {
+  fill: #b8babc;
+}
+
+.student-information h1 {
+  margin: 0 0 10px;
+  font-size: clamp(25px, 4vw, 31px);
+  line-height: 1.06;
+  letter-spacing: -0.5px;
+}
+
+.student-information p {
+  margin: 0;
+  font-size: clamp(20px, 3.25vw, 25px);
+  line-height: 1.03;
+}
+
+.settings-icon {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  width: 52px;
+  height: 52px;
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
+}
+
+.barcode-area {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barcode {
+  width: min(59.5%, 408px);
+  height: 69px;
+  background:
+    repeating-linear-gradient(
+      to right,
+      #0d0d0d 0 3px,
+      transparent 3px 6px,
+      #0d0d0d 6px 8px,
+      transparent 8px 11px,
+      #0d0d0d 11px 16px,
+      transparent 16px 19px,
+      #0d0d0d 19px 21px,
+      transparent 21px 25px,
+      #0d0d0d 25px 27px,
+      transparent 27px 29px
+    );
+}
+
+.courses {
+  max-width: 685px;
+  margin: 29px auto 0;
+}
+
+.courses h2 {
+  margin: 0 0 39px;
+  color: var(--white);
+  text-align: center;
+  font-size: clamp(27px, 4.35vw, 34px);
+  letter-spacing: -0.5px;
+}
+
+.course-list {
+  display: grid;
+  gap: 16px;
+}
+
+.course {
+  min-height: 104px;
+  padding: 25px 28px 18px;
+  border-radius: 5px;
+  background: var(--course-background);
+  color: var(--white);
+}
+
+.course h3 {
+  margin: 0 0 7px;
+  font-size: clamp(19px, 3.3vw, 25px);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.course p {
+  margin: 0;
+  color: var(--muted-text);
+  font-size: clamp(16px, 2.55vw, 20px);
+}
+
+@media (max-width: 560px) {
+  .app-header {
+    justify-content: flex-end;
+    padding-right: 22px;
+  }
+
+  .university-logo {
+    transform: scale(0.8);
+    transform-origin: right center;
+  }
+
+  .menu-button {
+    top: 46px;
+  }
+
+  .student-area {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .card-details {
+    grid-template-columns: 73px minmax(0, 1fr);
+    min-height: 165px;
+    padding: 29px 47px 18px 13px;
+  }
+
+  .profile-avatar {
+    width: 64px;
+    height: 64px;
+  }
+
+  .settings-icon {
+    width: 39px;
+    height: 39px;
+    right: 9px;
+  }
+
+  .student-information h1 {
+    font-size: clamp(18px, 6vw, 25px);
+    margin-bottom: 7px;
+  }
+
+  .student-information p {
+    font-size: clamp(14px, 4.4vw, 20px);
+  }
+
+  .barcode-area {
+    height: 79px;
+  }
+
+  .barcode {
+    width: 63%;
+    height: 54px;
+  }
+
+  .courses {
+    margin-top: 25px;
+  }
+
+  .courses h2 {
+    margin-bottom: 27px;
+  }
+
+  .course {
+    min-height: 88px;
+    padding: 21px 18px 15px;
+  }
+}
